@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import LogoutButton from '../../components/logout/LogoutComponent';
 
 const UserMovies = () => {
   const [movies, setMovies] = useState([]);
@@ -39,6 +40,7 @@ const UserMovies = () => {
     <div>
       <h2>Mes Films</h2>
       <Link to="/create/movie">Ajouter un nouveau film</Link>
+      <LogoutButton />
       {movies.length > 0 ? (
         movies.map((movie) => (
           <div key={movie._id}>

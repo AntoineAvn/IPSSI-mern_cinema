@@ -7,7 +7,7 @@ import MovieDetails from './pages/user/MovieDetails.jsx';
 import MovieForm from './pages/user/MovieForm.jsx';
 // import ErrorPage from "./pages/error/ErrorPage";
 import RegistrationForm from './pages/registration/RegistrationForm.jsx';
-import Page404 from "./pages/Page404/Page404.jsx";
+import Page404 from "./pages/page404/Page404.jsx";
 import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

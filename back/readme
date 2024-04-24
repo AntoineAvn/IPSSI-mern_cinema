@@ -1,0 +1,40 @@
+Projet : Application Cinéma MERN
+Objectif:
+Développer une application web utilisant la stack MERN (MongoDB, ExpressJS,
+ReactJS/ReactTS, NodeJS) qui permet aux utilisateurs de gérer leurs listes de films.
+Fonctionnalités:
+Authentification Utilisateur:
+Implémenter un système d'inscription et de connexion des utilisateurs.
+Sécuriser les sessions des utilisateurs avec des JSON Web Tokens (JWT) en utilisant JWT
+PASSPORT.
+Gestion des Films:
+Permettre aux utilisateurs d'ajouter, de supprimer, de lire et de modifier des entrées de films.
+Permettre aux utilisateurs de marquer les films comme "À Voir" ou "Vus".
+Afficher les listes de films personnalisées pour chaque utilisateur connecté.
+Prérequis Techniques:
+Front-End
+Développer l'interface utilisateur en utilisant ReactJS ou ReactTS.
+Implémenter une visualisation. Tous style supplémentaire sera pris en compte en bonus
+Back-End
+Créer une application NodeJS/ExpressJS pour gérer la logique côté serveur
+Utiliser MongoDB comme base de données pour stocker les données des utilisateurs et les
+informations sur les films
+Utiliser un ODM (Object-Document Mapping) ou une librairie d'accès aux données pour interagir
+avec la base de données
+Sécurité
+Implémenter l'authentification JWT pour protéger les données des utilisateurs et empêcher les
+accès non autorisés
+Bonus :
+Valider les entrées des utilisateurs
+Garantir une validation et une sanitation des données appropriées pour éviter les erreurs
+d'utilisateur et l'injection de code malveillant
+Implémenter des mécanismes de gestion des erreurs pour gérer de manière élégante les
+situations inattendues et fournir des retours informatifs aux utilisateurs
+Envisager d'intégrer des préférences utilisateur et des fonctionnalités de personnalisation pour
+améliorer l'expérience utilisateur
+Utiliser des principes de conception responsif pour assurer une utilisation optimale
+Écrire du code propre, bien structuré et maintenable, respectant les bonnes pratiques et les
+standards de codage
+Livrables:
+Un repo git
+Un code commenté.

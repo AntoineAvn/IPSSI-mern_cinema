@@ -38,3 +38,13 @@ standards de codage
 Livrables:
 Un repo git
 Un code commenté.
+
+Pour le .env:
+SERVER_HOST=localhost
+SERVER_PORT=3001
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+SECRET_PASS=
+API_PATH=/api/v1

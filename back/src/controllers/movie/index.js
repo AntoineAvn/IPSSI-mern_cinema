@@ -58,6 +58,22 @@ exports.getById = async (req, res) => {
     }
 }
 
+exports.getByUser = async (req, res) => {
+    try {
+        const { id } = req.params
+        const movie = await movieModel.find({ creatorId: id }).exec()
+        return !movie
+            ?
+            res.status(400).json({statusCode: 400, message: 'ERROR in getby id '})
+            :
+            res.status(200).json({statusCode: 201, message: movie})
+    }
+    catch (e) {
+        console.log(e)
+        return res.status(400).json({statusCode: 400, message: e.message})
+    }
+}
+
 exports.update = async (req, res) => {
     try {
         const { id } = req.params

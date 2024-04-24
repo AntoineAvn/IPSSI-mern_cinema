@@ -16,6 +16,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  h2 {
+    font-size: 2.5em;
+    line-height: 1.1;
+  }
   
   a {
     font-weight: 500;
@@ -29,7 +34,9 @@
   body {
     margin: 0;
     display: flex;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     min-width: 320px;
     min-height: 100vh;
   }
@@ -57,17 +64,71 @@
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-  
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    button {
-      background-color: #f9f9f9;
-    }
+
+  input{
+    margin: 1em 1em 1em 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #4b4b4b;
+    transition: border-color 0.25s;
+  }
+
+  .MoviesList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .cardMovies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #4b4b4b;
+    transition: border-color 0.25s;
+  }
+
+  .movieCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #4b4b4b;
+    transition: border-color 0.25s;
+  }
+
+  .movieCard button{
+    margin-top: 1em;
   }
   
+  .TitleMovies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #LinkAddMovie{
+    margin-left: 1em;
+  }
+
+  #btnLogout{
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    color: orange;
+  }

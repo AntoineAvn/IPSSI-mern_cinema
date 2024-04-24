@@ -56,13 +56,13 @@ const MovieDetails = () => {
   }
 
   return (
-    <div>
+    <div className='movieCard'>
       <h2>{movie.name}</h2>
+      <img src={movie.pictureUrl} alt={movie.name} style={{ width: '200px' }} />
       <p>Description : {movie.description}</p>
       <p>Catégorie : {movie.category}</p>
       <p>Regardé : {movie.watched ? 'Oui' : 'Non'}</p>
-      <img src={movie.pictureUrl} alt={movie.name} style={{ width: '200px' }} />
-      <button onClick={() => navigate(`/edit/movie/${movie._id}`)}>Modifier</button> {/* Lien pour modifier */}
+      <button onClick={() => navigate(`/edit/movie/${movie._id}`)}>Modifier</button>
       <button onClick={handleDelete}>Supprimer</button>
     </div>
   );

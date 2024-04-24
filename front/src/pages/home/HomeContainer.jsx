@@ -54,11 +54,13 @@ const HomeContainer = () => {
             value={email}
             type="text"
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
           />
           <input
             value={password}
             type="password"
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
           />
           <button type={"submit"}>Se connecter</button>
         </form>

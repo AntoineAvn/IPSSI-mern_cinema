@@ -38,23 +38,27 @@ const UserMovies = () => {
 
   return (
     <div>
-      <h2>Mes Films</h2>
-      <Link to="/create/movie">Ajouter un nouveau film</Link>
-      <LogoutButton />
+      <div className='TitleMovies'>
+        <h2>Mes Films</h2>
+          <small id="LinkAddMovie"><Link to="/create/movie">(Ajouter un nouveau film)</Link></small>
+      </div>
+        <LogoutButton />
+      <div className="MoviesList">
       {movies.length > 0 ? (
         movies.map((movie) => (
-          <div key={movie._id}>
+          <div className="cardMovies" key={movie._id}>
             <h3>
               <Link to={`/user/movie/${movie._id}`}>{movie.name}</Link>
             </h3>
+            <img src={movie.pictureUrl} alt={movie.name} style={{ width: '100px' }} />
             <p>Catégorie : {movie.category}</p>
             <p>Regardé : {movie.watched ? 'Oui' : 'Non'}</p>
-            <img src={movie.pictureUrl} alt={movie.name} style={{ width: '100px' }} />
           </div>
         ))
       ) : (
         <p>Pas de films trouvés</p>
       )}
+      </div>
     </div>
   );
 };
